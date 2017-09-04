@@ -2,9 +2,9 @@
 
 require_once("Deck.php");
 
-$regularDeck = new Deck();
+$deck = new Deck();
 
 $world = "World!";
 
-echo "<h2>Hello, " . $world . "</h2>" . $regularDeck->deckUnshuffled();
+echo "<h2>Hello, " . $world . "</h2>" . var_dump($deck->shuffledDeck());
 
